@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Subject Expert a learning and evaluation platform</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli%7CRubik:400,400i,500,700">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugins/magnific-popup/magnific-popup.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <!-- Font-->
+	<link rel="stylesheet" type="text/css" href="css/roboto-font.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/fontawesome.css">
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<script>
+        var ID = 0;
+        var seconds = 3;
+        function printMsg(){
+            document.getElementById("secs").innerHTML=seconds+" seconds Left";
+            seconds--;
+            ID = window.setInterval(printMsg,1000);
+            if(seconds == -1){
+                window.clearInterval(ID);
+        }
+        }
+        window.onload=printMsg;
+</script>
+<body>
+    <div class='preloader w-100 h-100 position-fixed'>
+        <div class="loader"> <img class="icon" src="assets/img/preloader.png" alt=""> </div>
+    </div>
+    <header class="header fixed-top">
+        <div class="fixed-top header-main style--one">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-sm-4 col-8">
+                        <div class="logo">
+                            <a href="index.html"> <img class="default-logo" src="assets/img/logo.png" data-rjs="2" alt=""> <img class="sticky-logo" src="assets/img/sticky_logo.png" data-rjs="2" alt=""> </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-sm-8 col-4">
+                        <div class="main-menu d-flex align-items-center justify-content-end">
+                            <ul class="nav align-items-center">
+                                <li class="current-menu-parent menu-item-has-children"> 
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li class="menu-item-has-children"> 
+                                    <a href="#">Instructions</a>
+                                </li>
+                                <li class="menu-item-has-children"> 
+                                        <a href="#">Contact Us</a>
+                                    </li>
+                                <li class="menu-item-has-children"> 
+                                        <a href="#">Start Test</a>
+                                </li>
+                                <li class="menu-item-has-children float-right">
+                                        <input style="width: 100px; height: 40px; margin-right: 0px; margin-top: 35px;" onClick="location.href='login.html'" type="submit" name="login" class="login" value="Sign In">
+                                        <input style="width: 100px; height: 40px; margin-right: 25px; margin-top: 35px;" onClick="location.href='signup.html'" type="submit" name="register" class="signup" value="Sign Up">
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section style="padding-top: 0px;" class="banner section-pattern" data-bg-img="assets/img/section-pattern/slider-pattern.png">
+        <div class="ban banner-slider owl-carousel d-flex align-items-center justify-content-center" data-owl-animate-in="fadeIn" data-owl-animate-Out="fadeOut" data-owl-autoplay="false" data-owl-dots="true">
+            <div class="single-banner-slider">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="banner-content">
+                                <div class="form-style-8">
+                                        <div class="myform form ">
+                                                <div class="page-content">
+                                                        <div class="form-v5-content">
+                                                            <form class="form-detail" action="#" method="post">
+                                                                    <h1 style="font-size: 50px; padding-bottom: 60px;">Register<span>Yourself</span></h2>
+                                                                <div class="form-row">
+                                                                    <label for="full-name">Full Name</label>
+                                                                    <input type="text" name="full-name" id="full-name" class="input-text" placeholder="Your Name" required>
+                                                                    
+                                                                </div>
+                                                                <div class="form-row">
+                                                                    <label for="your-email">Your Email</label>
+                                                                    <input type="text" name="your-email" id="your-email" class="input-text" placeholder="Your Email" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+                                                                    
+                                                                </div>
+                                                                <div class="form-row">
+                                                                    <label for="password">Password</label>
+                                                                    <input type="password" name="password" id="password" class="input-text" placeholder="Your Password" required>
+                                                                    
+                                                                </div>
+                                                                <div class="form-row-last">
+                                                                    <input style="width: 200px; margin-right: 25px;" type="submit" name="register" class="register" value="Register">
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div> 
+                                             </div>
+                                        
+                                      </div>
+                                      
+                                    </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="banner-image mt-50 mt-lg-0 text-center text-lg-right"><img src="assets/img/banner/slider-1.png" data-rjs="2" alt=""> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-top: 200px;" class="single-banner-slider">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="banner-content">
+                                <h1>We <span>Conduct</span> <br>ETEA</h1>
+                                <p>Tolerably we as extremity exquisite do commanded. Doubtful offended do entrance of landlord moreover is mistress in. Nay was appear entire ladies.</p><a href="#" class="banner-btn btn"><span>Get Appointment</span></a> </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="banner-image mt-50 mt-lg-0 text-center text-lg-right"> <img src="assets/img/banner/slider-2.png" data-rjs="2" alt=""> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="padding-top: 0px;" class="pt-120 pb-120 section-pattern ov-hidden" data-bg-img="assets/img/section-pattern/about-pattern.png">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="section-title">
+                        <h3>Why Subexpert</h3>
+                        <h2>We’re Expertise & <br>Strategic Agency To Take <br>Care Of Your Business</h2>
+                        <p>Met defective are allowance two perceived listening consulted contained. It chicken oh colonel pressed excited suppose to shortly.</p>
+                    </div>
+                    <div class="about-nav-tab">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-items"> <a class="nav-link active" data-toggle="tab" href="#mission" role="tab" aria-selected="true">Our Mission</a> </li>
+                            <li class="nav-items"> <a class="nav-link" data-toggle="tab" href="#vission" role="tab" aria-selected="false">Our Vission</a> </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="mission" role="tabpanel">
+                                <p>Surprise not wandered speedily husbands although yet end. Are court tiled cease young built fat one man taken. We highest ye friends is exposed equally in. Ignorant had too strictly followed.</p>
+                                <ul class="list-unstyled list-check">
+                                    <li><i class="fa fa-check" aria-hidden="true"></i> Become successful & superior</li>
+                                    <li><i class="fa fa-check" aria-hidden="true"></i> Provide quick & good solution for business</li>
+                                </ul> <a href="#" class="btn"><span>SEE MORE</span></a> </div>
+                            <div class="tab-pane fade" id="vission" role="tabpanel">
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                                <ul class="list-unstyled list-check">
+                                    <li><i class="fa fa-check" aria-hidden="true"></i> Become successful & superior</li>
+                                    <li><i class="fa fa-check" aria-hidden="true"></i> Provide quick & good solution for business</li>
+                                </ul> <a href="#" class="btn"><span>SEE MORE</span></a> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 video-area mt-50 mt-lg-0"> <img src="assets/img/section-bg/about-feature.png" data-rjs="2" alt="">
+                    <a href="https://www.youtube.com/watch?v=ctvlUvN6wSE" class="vdo-btn popup-video"><img src="assets/img/icons/play.svg" class="svg" alt=""> Watch Video</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pt-120 pb-70 section-pattern" data-bg-img="assets/img/section-pattern/work-process-pattern.png">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center">
+                        <h3>How It Works</h3>
+                        <h2>Work Process Our Experts Do</h2>
+                        <p>Delivered dejection necessary objection do mr prevailed. Mr feeling do chiefly cordial in do. Water timed folly right aware if oh truth. Imprudence attachment him his for sympathize.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row process-bg" data-bg-img="assets/img/process_shape.png">
+                <div class="col-lg-3 col-sm-6 single-process-wrapper">
+                    <div class="single-process text-center">
+                        <div class="image"> <img src="assets/img/process/process-1.png" data-rjs="2" alt=""> </div>
+                        <div class="content">
+                            <h3>Planning</h3>
+                            <p>He improve started no we manners however effects.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 single-process-wrapper">
+                    <div class="single-process text-center">
+                        <div class="image"> <img src="assets/img/process/process-2.png" data-rjs="2" alt=""> </div>
+                        <div class="content">
+                            <h3>Research</h3>
+                            <p>Up help home head spot an he room in.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 single-process-wrapper">
+                    <div class="single-process text-center">
+                        <div class="image"> <img src="assets/img/process/process-3.png" data-rjs="2" alt=""> </div>
+                        <div class="content">
+                            <h3>Dealing</h3>
+                            <p>Imprudence attachment him his for sympathize.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 single-process-wrapper">
+                    <div class="single-process text-center">
+                        <div class="image"> <img src="assets/img/process/process-4.png" data-rjs="2" alt=""> </div>
+                        <div class="content">
+                            <h3>Consultancy</h3>
+                            <p>He improve started no we manners however effects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pt-120 pb-120 section-pattern" data-bg-img="assets/img/section-pattern/service-pattern.png">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="section-title">
+                        <h3>Benefits</h3>
+                        <h2>We’re Providing <br>Best Solutions <br>For Your Business</h2>
+                        <p>We highest ye friends is exposed equally in. Ignorant had too strictly followed. Astonished as travelling assistance or unreserved oh pianoforte ye.</p>
+                    </div><a href="#" class="btn"><span>view All</span></a> </div>
+                <div class="col-lg-6">
+                    <div class="row mt-40 mt-lg-0">
+                        <div class="col-sm-6 single-service-wrapper">
+                            <div class="single-service text-center">
+                                <div class="icon"> <img src="assets/img/icons/service-1.png" data-rjs="2" alt=""> </div>
+                                <div class="content">
+                                    <h4>Financial Planning</h4>
+                                    <p>Saved he do fruit woody of to. Met defective are allowance two.</p><a href="#" class="btn-inline">Read More</a> </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 single-service-wrapper">
+                            <div class="single-service text-center">
+                                <div class="icon"> <img src="assets/img/icons/service-2.png" data-rjs="2" alt=""> </div>
+                                <div class="content">
+                                    <h4>Advanced Analytics</h4>
+                                    <p> Simplicity the far admiration preference thing.Up home head.</p><a href="#" class="btn-inline">Read More</a> </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 single-service-wrapper">
+                            <div class="single-service text-center">
+                                <div class="icon"> <img src="assets/img/icons/service-3.png" data-rjs="2" alt=""> </div>
+                                <div class="content">
+                                    <h4>Market Research</h4>
+                                    <p>Front no party young abode state up. Saved he do fruit woody of to.</p><a href="#" class="btn-inline">Read More</a> </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 single-service-wrapper">
+                            <div class="single-service text-center">
+                                <div class="icon"> <img src="assets/img/icons/service-4.png" data-rjs="2" alt=""> </div>
+                                <div class="content">
+                                    <h4>Business Campaign</h4>
+                                    <p>He improve started no we manners however effects. Prospect humoured.</p><a href="#" class="btn-inline">Read More</a> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pt-120 pb-120 section-pattern" data-bg-img="assets/img/section-pattern/testimonial-pattern.png">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center">
+                        <h3>Reviews</h3>
+                        <h2>Our Happy Client Tell About Us</h2>
+                        <p>It bachelor cheerful of mistaken. Tore has sons put upon wife use bred seen. Its dissimilar invitation ten has discretion unreserved. Had you him humoured jointure ask expenses learning.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-slider owl-carousel" data-owl-nav="true" data-owl-autoplay="false" data-owl-animate-Out="fadeOut" data-owl-animate-in="fadeIn" data-owl-margin="3">
+                <div class="single-testimonial-slide">
+                    <div class="row align-items-center">
+                        <div class="col-md-5">
+                            <div class="testimonial-image mb-50 mb-md-0"> <img src="assets/img/testimonial/testimonial-author-1.png" data-rjs="2" alt=""> </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="testimonial-content">
+                                <p>Mr acuteness we as estimable enjoyment up. An held late as felt know. Learn do allow solid to grave. In Middleton suspicion age her attention. Chiefly several bed its wishing.</p>
+                                <h4>Albert Knick</h4> <span>Businessman</span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-testimonial-slide">
+                    <div class="row align-items-center">
+                        <div class="col-md-5">
+                            <div class="testimonial-image mb-50 mb-md-0"> <img src="assets/img/testimonial/testimonial-2.png" data-rjs="2" alt=""> </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="testimonial-content">
+                                <p>Mr acuteness we as estimable enjoyment up. An held late as felt know. Learn do allow solid to grave. In Middleton suspicion age her attention. Chiefly several bed its wishing.</p>
+                                <h4>Ali Adam</h4> <span>XDR Owner</span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-testimonial-slide">
+                    <div class="row align-items-center">
+                        <div class="col-md-5">
+                            <div class="testimonial-image mb-50 mb-md-0"> <img src="assets/img/testimonial/testimonial-3.png" data-rjs="2" alt=""> </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="testimonial-content">
+                                <p>Mr acuteness we as estimable enjoyment up. An held late as felt know. Learn do allow solid to grave. In Middleton suspicion age her attention. Chiefly several bed its wishing.</p>
+                                <h4>Emran Bikewala</h4> <span>Business Magnet</span> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+    <section class="pt-120 pb-70 gradient-bg">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-counter text-center text-white">
+                        <h2 class="count"><span>15</span></h2>
+                        <p>Years of experience</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-counter text-center text-white">
+                        <h2 class="count"><span>1250</span>+</h2>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-counter text-center text-white">
+                        <h2 class="count"><span>1</span>k+</h2>
+                        <p>Project Done</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-counter text-center text-white">
+                        <h2 class="count"><span>100</span>+</h2>
+                        <p>Giving Consultancy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-120 pb-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center">
+                        <h3>Subjects</h3>
+                        <h2>Test Conduction</h2>
+                        <p>Mutual has cannot beauty indeed now sussex merely you. It possible no husbands jennings ye offended packages pleasant he. Remainder recommend who applauded departure joy.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row project-items grid">
+                <div class="col-lg-3 grid-item sales business" style="padding-top: 10px;">
+                    <div class="card">
+                        <img class="card-img-top" src="chemistry.jpg" width="390px" height="250px" alt="Card image cap">
+                  <div  style="padding-top: 10px;" class="container">
+                    <h4 class="sub_title" style="padding-bottom: 20px; padding-top: 2px; font-size: 16px;"><b>ENGLISH</b></h4> 
+                    <p>Total MCQs <span style="float: right; font-weight: bolder;">150</span></p>
+                    <hr>  
+                    <p> Physics<span style="float: right; font-weight: bolder;">50</span></p>
+                    <hr>
+                    <p>Chemistry<span style="float: right; font-weight: bolder;">50</span></p>
+                    <hr>
+                    <p>Maths<span style="float: right; font-weight: bolder;">50</span></p>
+                  </div>
+                </div>
+                </div>
+                <div class="col-lg-3 grid-item sales financial" style="padding-top: 10px;">
+                    <div class="card">
+                        <img class="card-img-top" src="chemistry.jpg" width="390px" height="250px" alt="Card image cap">
+                  <div  style="padding-top: 10px;" class="container">
+                    <h4 class="sub_title" style="padding-bottom: 20px; padding-top: 2px; font-size: 16px;"><b>MATHS</b></h4> 
+                    <p>Total MCQs <span style="float: right; font-weight: bolder;">150</span></p>
+                    <hr>  
+                    <p> Physics<span style="float: right; font-weight: bolder;">50</span></p>
+                    <hr>
+                    <p>Chemistry<span style="float: right; font-weight: bolder;">50</span></p>
+                    <hr>
+                    <p>Maths<span style="float: right; font-weight: bolder;">50</span></p>
+                  </div>
+                </div>
+                </div>
+                <div class="col-lg-3 grid-item investment business" style="padding-top: 10px;">
+                    <div class="card">
+                        <img class="card-img-top" src="chemistry.jpg" width="390px" height="250px" alt="Card image cap">
+                  <div  style="padding-top: 10px;" class="container">
+                    <h4 class="sub_title" style="padding-bottom: 20px; padding-top: 2px; font-size: 16px;"><b>CHEMISTRY</b></h4> 
+                    <p>Total MCQs <span style="float: right; font-weight: bolder;">150</span></p>
+                    <hr>  
+                    <p> Physics<span style="float: right; font-weight: bolder;">50<w/span></p>
+                    <hr>
+                    <p>Chemistry<span style="float: right; font-weight: bolder;">50</span></p>
+                    <hr>
+                    <p>Maths<span style="float: right; font-weight: bolder;">50</span></p>
+                    <hr>
+                    <h3 id="secs">Seconds</h3>
+                  </div>
+                </div>
+                </div>
+                <div class="col-lg-3 grid-item financial funds" style="padding-top: 10px;">
+                    <div class="card">
+                        <img class="card-img-top" src="chemistry.jpg" width="390px" height="250px" alt="Card image cap">
+                  <div  style="padding-top: 10px;" class="container">
+                    <h4 class="sub_title" style="padding-bottom: 20px; padding-top: 2px; font-size: 16px;"><b>PHYSICS</b></h4> 
+                    <p>Total MCQs <span style="float: right; font-weight: bolder;">150</span></p>
+                    <hr>  
+                    <p> Physics<span style="float: right; font-weight: bolder;">50</span></p>
+                    <hr>
+                    <p>Chemistry<span style="float: right; font-weight: bolder;">50</span></p>
+                    <hr>
+                    <p>Maths<span style="float: right; font-weight: bolder;">50</span></p>
+                  </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+  
+    <section class="pt-120 pb-70 section-pattern" data-bg-img="assets/img/section-pattern/testimonial-pattern.png">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center">
+                        <h3>Teachers</h3>
+                        <h2>Our Experts Teachers</h2>
+                        <p>Ferrars all spirits his imagine effects amongst neither. It bachelor cheerful of mistaken. Tore has sons put upon wife use bred seen. Its dissimilar invitation ten has discretion unreserved.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single-team-member">
+                        <div class="image position-relative"> <img src="assets/img/shapes/team.svg" class="svg" alt=""> <img src="assets/img/team/team-1.jpg" data-rjs="2" alt=""> </div>
+                        <div class="team-info">
+                            <div class="info-front text-center">
+                                <h4>Mukhtiar Zamin</h4>
+                                <p>CEO of Subexpert</p>
+                            </div>
+                            <div class="info-back">
+                                <ul class="social_icon_list list-inline text-center w-100 d-flex justify-content-around">
+                                    <li> <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
+                                    <li> <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
+                                    <li> <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </li>
+                                    <li> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single-team-member">
+                        <div class="image position-relative"> <img src="assets/img/shapes/team.svg" class="svg" alt=""> <img src="assets/img/team/team-2.jpg" data-rjs="2" alt=""> </div>
+                        <div class="team-info">
+                            <div class="info-front text-center">
+                                <h4>Dr.Kashif Bilal</h4>
+                                <p>CEO of Subexpert</p>
+                            </div>
+                            <div class="info-back">
+                                <ul class="social_icon_list list-inline text-center w-100 d-flex justify-content-around">
+                                    <li> <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
+                                    <li> <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
+                                    <li> <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </li>
+                                    <li> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single-team-member">
+                        <div class="image position-relative"> <img src="assets/img/shapes/team.svg" class="svg" alt=""> <img src="assets/img/team/team-3.jpg" data-rjs="2" alt=""> </div>
+                        <div class="team-info">
+                            <div class="info-front text-center">
+                                <h4>Raheem Dawar</h4>
+                                <p>CEO of Seerbytes</p>
+                            </div>
+                            <div class="info-back">
+                                <ul class="social_icon_list list-inline text-center w-100 d-flex justify-content-around">
+                                    <li> <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
+                                    <li> <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
+                                    <li> <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </li>
+                                    <li> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gradient-bg pt-120 pb-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="cta-content text-center text-white">
+                        <h2>The best strategical business <br>agency to build up your business in next level.</h2>
+                        <p>Distrusts fulfilled happiness unwilling as explained of difficult. No landlord of peculiar ladyship attended if contempt ecstatic. Loud wish made on is am as hard. Court so avoid in plate hence.</p><a href="#" class="btn btn-white"><span>Get expert advice</span></a> </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-120 pb-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="brand-logo owl-carousel" data-owl-items="6" data-owl-autoplay="false" data-owl-responsive='{"0":{"items": "2"},"575":{"items": "3"},"768":{"items": "4"},"992":{"items": "6"}}'>
+                        <a href="#" class="single-brand-logo"> <img src="assets/img/brand/brand-1.png" data-rjs="2" alt=""> </a>
+                        <a href="#" class="single-brand-logo"> <img src="assets/img/brand/brand-2.png" data-rjs="2" alt=""> </a>
+                        <a href="#" class="single-brand-logo"> <img src="assets/img/brand/brand-3.png" data-rjs="2" alt=""> </a>
+                        <a href="#" class="single-brand-logo"> <img src="assets/img/brand/brand-4.png" data-rjs="2" alt=""> </a>
+                        <a href="#" class="single-brand-logo"> <img src="assets/img/brand/brand-5.png" data-rjs="2" alt=""> </a>
+                        <a href="#" class="single-brand-logo"> <img src="assets/img/brand/brand-6.png" data-rjs="2" alt=""> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer bg-light section-pattern footer-bg" data-bg-img="assets/img/section-pattern/footer-pattern.png">
+        <div class="footer-top pt-60">
+            <div class="container border-bottom">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="widget widget_contact_info">
+                                <div class="widget-logo"> <img src="assets/img/logo.png" data-rjs="2" alt=""> </div>
+                            <div class="info-content">
+                                <div class="single-info"> <span>Office Location</span>
+                                    <p>173 Collins Street West victoria, Melbourne, Australia</p>
+                                </div>
+                                <div class="single-info"> <span>Business Phone</span>
+                                    <p><a href="#">+0096665431</a><a href="#">+0096667331</a></p>
+                                </div>
+                                <div class="single-info"> <span>Support mail</span>
+                                    <p> <a href="#">support@subexpert.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                            <div class="widget widget_nav_menu">
+                                <div class="widget-title">
+                                    <h4>Subjects</h4> </div>
+                                <ul class="menu">
+                                    <li><a href="https://subexpert.com/Subjects/ViewSubject/Software-Engineering-II" target="_blank">Software Engineering II</a></li>
+                                    <li><a href="https://subexpert.com/Subjects/ViewSubject/Web-Engineering" target="_blank">Web Engineering</a></li>
+                                    <li><a href="https://subexpert.com/Subjects/ViewSubject/Database-Systems" target="_blank">Database Systems</a></li>
+                                    <li><a href="https://subexpert.com/Subjects/ViewSubject/Computer-Programming" target="_blank">Computer Programming</a></li>
+                                    <li><a href="https://subexpert.com/Subjects/ViewSubject/Operating-Systems" target="_blank">Operating Systems</a></li>
+                                    <li><a href="https://subexpert.com/Subjects/ViewSubject/Computer-Networks" target="_blank">Computer Networks</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    <div class="col-lg-2 col-sm-6">
+                        <div class="widget widget_nav_menu">
+                            <div class="widget-title">
+                                <h4>Quick Links</h4> </div>
+                            <ul class="menu">
+                                <li><a href="#" target="_blank">Home</a></li>
+                                <li><a href="#" target="_blank">Instructions</a></li>
+                                <li><a href="https://subexpert.com/sitemap.xml" target="_blank">Sitemap</a></li>
+                                <li><a href="#" target="_blank">Contact Us</a></li>
+                                <li><a href="#" target="_blank">Terms & Condition</a></li>
+                                <li><a href="#" target="_blank">Privacy policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="widget widget_newsletter">
+                            <div class="widget-title">
+                                <h4>Newsletter</h4> </div>
+                            <div class="newsletter-content">
+                                <P>Cuteness you exquisite ourselves now end forfeited. Enquire ye without it garrets himself. Interest our nor received followed was.</P>
+                                <form action="https://themelooks.us13.list-manage.com/subscribe/post?u=79f0b132ec25ee223bb41835f&amp;id=f4e0e93d1d" method="post" name="mc-embedded-subscribe-form" target="_blank" class="newsletter-form">
+                                    <div class="theme-input-group">
+                                        <input type="text" placeholder="Your Email">
+                                        <button type="submit"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="widget widget_social_icon">
+                            <ul class="social_icon_list list-inline">
+                                <li> <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
+                                <li> <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
+                                <li> <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </li>
+                                <li> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="copyright-text text-center"> <span><a href="#">Subexpert</a> &copy; Copyright 2019.All rights reserved.</span> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="back-to-top position-fixed">
+        <div class="back-toop-tooltip"><span>Back To Top</span></div>
+        <div class="top-arrow"></div>
+        <div class="top-line"></div>
+    </a>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/menu.min.js"></script>
+    <script src="assets/plugins/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/plugins/waypoints/jquery.counterup.min.js"></script>
+    <script src="assets/plugins/owlcarousel/owl.carousel.min.js"></script>
+    <script src="assets/plugins/isotope/isotope.pkgd.min.js"></script>
+    <script src="assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="assets/plugins/countdown/countdown.min.js"></script>
+    <script src="assets/plugins/retinajs/retina.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjkssBA3hMeFtClgslO2clWFR6bRraGz0"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/custom.js"></script>
+    
+</body>
+</html>
